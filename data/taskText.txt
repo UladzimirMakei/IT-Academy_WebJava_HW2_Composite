@@ -1,0 +1,4 @@
+    The String class is an immutable class.
+    Whereas StringBuffer and StringBuilder classes are mutable.
+    StringBuilder is nonsynchronized.
+    StringBuffer is synchronized. StringBuilder is more efficient than StringBuffer.
