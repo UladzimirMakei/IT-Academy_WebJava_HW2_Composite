@@ -6,6 +6,10 @@ import lombok.Setter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This is main class which is used for parsing.
+ * Pattern Composite is implemented here.
+ */
 @Setter
 @Getter
 public class TextComposite implements TextComponent {

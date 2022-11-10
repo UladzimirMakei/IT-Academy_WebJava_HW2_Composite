@@ -9,7 +9,8 @@ import java.util.List;
 
 public class TextUnitSortActionImpl implements TextUnitSortAction {
     @Override
-    public void sortTextUnit(TextComponent textComponent, TextType unitType) {
+    public void sortTextComposite(
+            TextComponent textComponent, TextType unitType) {
         TextUnitSortAction sortAction = new TextUnitSortActionImpl();
         for (TextComponent unit : textComponent.getCompositeText()) {
             if (unit.getTextType().equals(unitType)) {
@@ -17,7 +18,7 @@ public class TextUnitSortActionImpl implements TextUnitSortAction {
                 listText.sort(TextUnitComparator.UNIT_SIZE);
                 unit.setCompositeText(listText);
             } else {
-                sortAction.sortTextUnit(unit, unitType);
+                sortAction.sortTextComposite(unit, unitType);
             }
         }
     }

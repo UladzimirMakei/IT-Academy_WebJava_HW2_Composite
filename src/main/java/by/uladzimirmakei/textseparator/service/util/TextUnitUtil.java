@@ -22,7 +22,7 @@ public final class TextUnitUtil {
             TextComposite textComposite, TextType textType) {
         TextUnitSortActionImpl sortAction
                 = new TextUnitSortActionImpl();
-        sortAction.sortTextUnit(textComposite, TextType.PARAGRAPH);
+        sortAction.sortTextComposite(textComposite, TextType.PARAGRAPH);
     }
 
     public static void writeTextUnitToFile(
